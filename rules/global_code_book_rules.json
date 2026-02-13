@@ -52,5 +52,569 @@
         }
       ]
     }
+  },
+  "covid_cough": {
+    "nih_cough": {
+      "source": "covid_cough",
+      "target": "nih_cough",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_cough to the nih_cough Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_fever": {
+    "nih_fever_chills": {
+      "source": "covid_fever",
+      "target": "nih_fever_chills",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_fever to the nih_fever_chills Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_diffbreath": {
+    "nih_diff_breath": {
+      "source": "covid_diffbreath",
+      "target": "nih_diff_breath",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_diffbreath to the nih_diff_breath Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_headache": {
+    "nih_headache": {
+      "source": "covid_headache",
+      "target": "nih_headache",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_headache to the nih_headache Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_myalgia": {
+    "nih_muscle_ache": {
+      "source": "covid_myalgia",
+      "target": "nih_muscle_ache",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_myalgia to the nih_muscle_ache Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_olfactory": {
+    "nih_olfactory": {
+      "source": "covid_olfactory",
+      "target": "nih_olfactory",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_olfactory to the nih_olfactory Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_fatique": {
+    "nih_fatigue": {
+      "source": "covid_fatique",
+      "target": "nih_fatigue",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_fatique to the nih_fatigue Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_nausea": {
+    "nih_nausea_vomiting_diarrhea": {
+      "source": "covid_nausea",
+      "target": "nih_nausea_vomiting_diarrhea",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_nausea to the nih_nausea_vomiting_diarrhea Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_abpain": {
+    "nih_abdom_pain": {
+      "source": "covid_abpain",
+      "target": "nih_abdom_pain",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_abpain to the nih_abdom_pain Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_skinrash": {
+    "nih_skin_rash": {
+      "source": "covid_skinrash",
+      "target": "nih_skin_rash",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_skinrash to the nih_skin_rash Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_runnynose": {
+    "nih_throat_congestion_nose": {
+      "source": "covid_runnynose",
+      "target": "nih_throat_congestion_nose",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_runnynose to the nih_throat_congestion_nose Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "covid_other": {
+    "nih_other_symp": {
+      "source": "covid_other",
+      "target": "nih_other_symp",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP covid_other to the nih_other_symp Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1,
+            "98": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "cough": {
+    "nih_cough": {
+      "source": "cough",
+      "target": "nih_cough",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad cough to the nih_cough Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "fever": {
+    "nih_fever_chills": {
+      "source": "fever",
+      "target": "nih_fever_chills",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad fever to the nih_fever_chills Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "chills": {
+    "nih_fever_chills": {
+      "source": "chills",
+      "target": "nih_fever_chills",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad chills to the nih_fever_chills Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "shortness_of_breath_or_dif": {
+    "nih_diff_breath": {
+      "source": "shortness_of_breath_or_dif",
+      "target": "nih_diff_breath",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad shortness_of_breath_or_dif to the nih_diff_breath Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "headache": {
+    "nih_headache": {
+      "source": "headache",
+      "target": "nih_headache",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad headache to the nih_headache Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "muscle_ache": {
+    "nih_muscle_ache": {
+      "source": "muscle_ache",
+      "target": "nih_muscle_ache",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad muscle_ache to the nih_muscle_ache Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "new_loss_of_taste_or_smell": {
+    "nih_olfactory": {
+      "source": "new_loss_of_taste_or_smell",
+      "target": "nih_olfactory",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad new_loss_of_taste_or_smell to the nih_olfactory Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "excessive_fatigue": {
+    "nih_fatigue": {
+      "source": "excessive_fatigue",
+      "target": "nih_fatigue",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad excessive_fatigue to the nih_fatigue Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "nausea_vomiting, diarrhea": {
+    "nih_nausea_vomiting_diarrhea": {
+      "source": "nausea_vomiting, diarrhea",
+      "target": "nih_nausea_vomiting_diarrhea",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad nausea_vomiting, diarrhea to the nih_nausea_vomiting_diarrhea Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "abdominal_pain": {
+    "nih_abdom_pain": {
+      "source": "abdominal_pain",
+      "target": "nih_abdom_pain",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad abdominal_pain to the nih_abdom_pain Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "skin_rash": {
+    "nih_skin_rash": {
+      "source": "skin_rash",
+      "target": "nih_skin_rash",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad skin_rash to the nih_skin_rash Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "conjunctivitis": {
+    "nih_conjunctivitis": {
+      "source": "conjunctivitis",
+      "target": "nih_conjunctivitis",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad conjunctivitis to the nih_conjunctivitis Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=774720633#gid=774720633"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "0": 0,
+            "1": 1
+          },
+          "strict": true
+        }
+      ]
+    }
   }
 }
