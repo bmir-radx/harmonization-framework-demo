@@ -616,5 +616,54 @@
         }
       ]
     }
+  },
+  "record_id": {
+    "nih_record_id": {
+      "source": "record_id",
+      "target": "nih_record_id",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP record_id to the nih_record_id Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book",
+          "Harmonizes RADx-rad record_id to the nih_record_id Tier 1 CDE"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=1473637700#gid=1473637700"
+      },
+      "operations": []
+    }
+  },
+  "age_yrs": {
+    "nih_age": {
+      "source": "age_yrs",
+      "target": "nih_age",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP age_yrs to the nih_age Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=1191941917#gid=1191941917"
+      },
+      "operations": [
+        {
+          "operation": "cast",
+          "source": "integer",
+          "target": "text"
+        }
+      ]
+    }
+  },
+  "age": {
+    "nih_age": {
+      "source": "age",
+      "target": "nih_age",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad age to the nih_age Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=1191941917#gid=1191941917"
+      },
+      "operations": []
+    }
   }
 }
