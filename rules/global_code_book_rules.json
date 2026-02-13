@@ -1,0 +1,33 @@
+{
+  "current_employment_status": {
+    "nih_employment": {
+      "source": "current_employment_status",
+      "target": "nih_employment",
+      "metadata": {
+        "comments": [
+         	"Harmonizes RADx-UP current_employment_status to the nih_employment Tier 1 CDE",
+			"This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=1036430776#gid=1036430776"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 4,
+            "5": 5,
+            "6": 3,
+            "7": 2,
+            "96": 97,
+            "98": 99,
+            "99": 98
+          },
+          "strict": true
+        }
+      ]
+    }
+  }
+}
