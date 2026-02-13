@@ -38,7 +38,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -61,7 +62,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -84,7 +86,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -107,7 +110,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -130,7 +134,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -153,7 +158,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -176,7 +182,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -199,7 +206,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -222,7 +230,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -245,7 +254,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -268,7 +278,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -291,7 +302,8 @@
           "operation": "enum_to_enum",
           "mapping": {
             "0": 0,
-            "1": 1
+            "1": 1,
+            "-9999": -9999
           },
           "strict": true
         }
@@ -330,7 +342,8 @@
             "2": 0,
             "1": 1,
             "3": 2,
-            "4": 96
+            "4": 96,
+            "-9999": -9999
           },
           "strict": true
         }
