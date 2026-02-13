@@ -665,5 +665,56 @@
       },
       "operations": []
     }
+  },
+  "bio_sex_birth": {
+    "nih_sex": {
+      "source": "bio_sex_birth",
+      "target": "nih_sex",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-UP bio_sex_birth to the nih_sex Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=390707689#gid=390707689"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "1": 0,
+            "0": 1,
+            "2": 3,
+            "96": 96,
+            "99": 99
+          },
+          "strict": true
+        }
+      ]
+    }
+  },
+  "sex": {
+    "nih_sex": {
+      "source": "sex",
+      "target": "nih_sex",
+      "metadata": {
+        "comments": [
+          "Harmonizes RADx-rad sex to the nih_sex Tier 1 CDE",
+          "This rule was taken from the RADx Global Code Book"
+        ],
+        "provenance": "https://docs.google.com/spreadsheets/d/1lpTkg9jIeQImOD0Y6u6DTvNfWKeCFEEN/edit?gid=390707689#gid=390707689"
+      },
+      "operations": [
+        {
+          "operation": "enum_to_enum",
+          "mapping": {
+            "2": 0,
+            "1": 1,
+            "3": 2,
+            "4": 96
+          },
+          "strict": true
+        }
+      ]
+    }
   }
 }
