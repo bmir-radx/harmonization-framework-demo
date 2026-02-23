@@ -19,7 +19,7 @@ consent_ident,"I agree to let the Duke Clinical Research Institute collect the f
 Values for this data element are integers that are restricted to the list of 2 permissible integer values.
 
 This data element only records a non-blank value if the value of `consent_given` is `1`, _""Yes, consent is required for this study""_.",Consent,,single,integer,,,"""1""=[Yes]|""0""=[No]",,For consent forms that include these named identifiers. Variable is optional based on study design.,RADx-UP DCC,
-consent_zip_2,I agree to let the Duke Clinical Research Institute collect my zip code.,"The `consent_zip_2` data element records response to the prompt, _""I agree to let the Duke Clinical Research Institute collect my zip code.""_.
+consent_zip,I agree to let the Duke Clinical Research Institute collect my zip code.,"The `consent_zip` data element records response to the prompt, _""I agree to let the Duke Clinical Research Institute collect my zip code.""_.
 
 Values for this data element are integers that are restricted to the list of 2 permissible integer values.
 
@@ -57,12 +57,12 @@ Values for this data element are integers that restricted to the list of 7 permi
 U.S. Census Bureau, Census 2020, Questionnaire
 
 Reduced to OMB + specifiy, added 99, Prefer not to answer",RADx-UP DCC,
-race_ethn_asian_detail_3," (Check all that apply)","The `race_ethn_asian_detail_3` data element records response to the prompt, _"" (Check all that apply)""_.
+race_ethn_asian_detail," (Check all that apply)","The `race_ethn_asian_detail` data element records response to the prompt, _"" (Check all that apply)""_.
 
 Values for this data element are integers that restricted to the list of 23 permissible integer values.  The value `99` is mutually exclusive with any other values.
 
 This data element only records a non-blank value if the value of `race_ethn_race` is `3`, _""Asian""_.",Demographics,,multiple,integer,,,"""6""=[Asian Indian]|""7""=[Bangladeshi]|""8""=[Bhutanese]|""9""=[Burmese]|""10""=[Cambodian]|""3""=[Chinese, except Taiwanese]|""2""=[Filipino]|""11""=[Hmong]|""12""=[Indonesian]|""1""=[Japanese]|""4""=[Korean]|""13""=[Laotian]|""14""=[Malaysian]|""15""=[Mongolian]|""16""=[Nepalese]|""17""=[Okinawan]|""18""=[Pakistani]|""19""=[Sri Lankan]|""20""=[Taiwanese]|""21""=[Thai]|""22""=[Vietnamese]|""5""=[Other Asian]|""99""=[Prefer not to answer]",,detail from RADx-UP projects,RADx-UP DCC,
-race_ethn_islander_detail_2," (Check all that apply)","The `race_ethn_islander_detail_2` data element records response to the prompt, _"" (Check all that apply)""_.
+race_ethn_islander_detail," (Check all that apply)","The `race_ethn_islander_detail` data element records response to the prompt, _"" (Check all that apply)""_.
 
 Values for this data element are integers that restricted to the list of 15 permissible integer values.  The value `99` is mutually exclusive with any other values.
 
@@ -87,7 +87,7 @@ https://www.phenxtoolkit.org/protocols/view/11901
 U.S. Census Bureau, Census 2020, Questionnaire
 
 Reduced to OMB, Added 99, Prefer not to answer",RADx-UP DCC,
-race_ethn_hispanic_detail_2,Please specify your origin,"The `race_ethn_hispanic_detail_2` data element records response to the prompt, _""Please specify your origin""_.
+race_ethn_hispanic_detail,Please specify your origin,"The `race_ethn_hispanic_detail` data element records response to the prompt, _""Please specify your origin""_.
 
 Values for this data element are integers that restricted to the list of 8 permissible integer values.  The value `99` is mutually exclusive with any other values.
 
@@ -96,7 +96,7 @@ race_ethn_hispanic_other,"Please specify other Hispanic, Latino, or Spanish orig
 
 
 
-This data element only records a non-blank value if the value of `race_ethn_hispanic_detail_2` is `4`, _""Another Hispanic, Latino, or Spanish origin""_.",Demographics,,single,string,,,,,PX011901,RADx-UP DCC,
+This data element only records a non-blank value if the value of `race_ethn_hispanic_detail` is `4`, _""Another Hispanic, Latino, or Spanish origin""_.",Demographics,,single,string,,,,,PX011901,RADx-UP DCC,
 age_yrs,"Age
 
 For babies less than 1 year old, do not write the age in months. Write 0 as the age. (Years)","The `age_yrs` data element records response to the prompt, _""Age
@@ -110,7 +110,7 @@ For babies less than 1 year old, do not write the age in months. Write 0 as the 
 https://www2.census.gov/programs-surveys/acs/methodology/questionnaires/2020/quest20.pdf
 
 Census ACS.  Only one of age_years or dob_mdy needs to be collected for tier 1 compliance.",RADx-UP DCC,
-bio_sex_birth_2,What was your sex assigned at birth on your birth certificate?,"The `bio_sex_birth_2` data element records response to the prompt, _""What was your sex assigned at birth on your birth certificate?""_.
+bio_sex_birth,What was your sex assigned at birth on your birth certificate?,"The `bio_sex_birth` data element records response to the prompt, _""What was your sex assigned at birth on your birth certificate?""_.
 
 Values for this data element are integers that are restricted to the list of 5 permissible integer values.
 
@@ -121,7 +121,7 @@ https://www.phenxtoolkit.org/protocols/view/11601
 HHS/CDC COVID Lab Reporting Specifications
 
 Removed 'Biological' term",RADx-UP DCC,
-gender_identity_term_2,What terms best express how you describe your gender identity?,"The `gender_identity_term_2` data element records response to the prompt, _""What terms best express how you describe your gender identity?""_.
+gender_identity_term,What terms best express how you describe your gender identity?,"The `gender_identity_term` data element records response to the prompt, _""What terms best express how you describe your gender identity?""_.
 
 Values for this data element are integers that restricted to the list of 10 permissible integer values.  The values `96`,`99` are mutually exclusive with any other values.
 
@@ -130,7 +130,7 @@ pregnancy_status,Are you currently pregnant?,"The `pregnancy_status` data elemen
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
-This data element only records a non-blank value if the value of `bio_sex_birth_2` is `1`, _""Female""_.",Demographics,,single,integer,,,"""1""=[Pregnant]|""0""=[Not Pregnant]|""98""=[Don't know]|""99""=[Prefer not to answer]",,"PX240602
+This data element only records a non-blank value if the value of `bio_sex_birth` is `1`, _""Female""_.",Demographics,,single,integer,,,"""1""=[Pregnant]|""0""=[Not Pregnant]|""98""=[Don't know]|""99""=[Prefer not to answer]",,"PX240602
 
 https://www.phenxtoolkit.org/protocols/view/240602 . Consider [gender_identity_term] = '1' and [age_yrs] >= 18 as additional recruitment restraints.",RADx-UP DCC,
 sex_orient_id,Which of the following best represents how you think of yourself at this time?,"The `sex_orient_id` data element records response to the prompt, _""Which of the following best represents how you think of yourself at this time?""_.
@@ -148,7 +148,7 @@ housing_date_mdy,"Date of Housing, Employment and Insurance Collection (MM/DD/YY
 
 
 ",Housing,,single,string,,,,,Note: Maximum expected day = Current day.,RADx-UP DCC,
-household_famgen_3,What best describes the people at your home:,"The `household_famgen_3` data element records response to the prompt, _""What best describes the people at your home:""_.
+household_famgen,What best describes the people at your home:,"The `household_famgen` data element records response to the prompt, _""What best describes the people at your home:""_.
 
 Values for this data element are integers that restricted to the list of 8 permissible integer values.  The value `90` is mutually exclusive with any other values.
 
@@ -157,8 +157,8 @@ household_homeless,"Are you currently living in transitional housing, staying in
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
-This data element only records a non-blank value if the value of `household_famgen_3` is `90`, _""None of these""_.",Housing,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Prefer not to answer]|""99""=[Don't know]",,Recommendation from RADx-UP projects,RADx-UP DCC,
-household_congregate_3,Do you live in any of these?,"The `household_congregate_3` data element records response to the prompt, _""Do you live in any of these?""_.
+This data element only records a non-blank value if the value of `household_famgen` is `90`, _""None of these""_.",Housing,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Prefer not to answer]|""99""=[Don't know]",,Recommendation from RADx-UP projects,RADx-UP DCC,
+household_congregate,Do you live in any of these?,"The `household_congregate` data element records response to the prompt, _""Do you live in any of these?""_.
 
 Values for this data element are integers that are restricted to the list of 12 permissible integer values.
 
@@ -167,8 +167,8 @@ household_other,Where do you stay/live?,"The `household_other` data element reco
 
 
 
-This data element only records a non-blank value if the value of `household_congregate_3` is `90`, _""Somewhere else""_.",Housing,,single,string,,,,,,RADx-UP DCC,
-jobloss_covid19_2,"Have you, or has anyone in your household, experienced a loss of employment income since the start of the COVID-19 pandemic (March 2020)?","The `jobloss_covid19_2` data element records response to the prompt, _""Have you, or has anyone in your household, experienced a loss of employment income since the start of the COVID-19 pandemic (March 2020)?""_.
+This data element only records a non-blank value if the value of `household_congregate` is `90`, _""Somewhere else""_.",Housing,,single,string,,,,,,RADx-UP DCC,
+jobloss_covid19,"Have you, or has anyone in your household, experienced a loss of employment income since the start of the COVID-19 pandemic (March 2020)?","The `jobloss_covid19` data element records response to the prompt, _""Have you, or has anyone in your household, experienced a loss of employment income since the start of the COVID-19 pandemic (March 2020)?""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -204,7 +204,7 @@ https://loinc.org/sars-cov-2-and-covid-19/
 No source:  Novel item as per CDC testing reporting
 
 Novel Question-- Modified based on feedback from RADx-Up projects",RADx-UP DCC,
-employed_healthcare_2,"Would any of these describe where you work? If you work multiple jobs, select the closest match to your main job.","The `employed_healthcare_2` data element records response to the prompt, _""Would any of these describe where you work? If you work multiple jobs, select the closest match to your main job.""_.
+employed_healthcare,"Would any of these describe where you work? If you work multiple jobs, select the closest match to your main job.","The `employed_healthcare` data element records response to the prompt, _""Would any of these describe where you work? If you work multiple jobs, select the closest match to your main job.""_.
 
 Values for this data element are integers that are restricted to the list of 12 permissible integer values.
 
@@ -229,42 +229,42 @@ hi_loss_covid,Did you lose health coverage because of the COVID-19 pandemic?,"Th
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",Employment,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Prefer not to answer]|""99""=[Don't know]",,,RADx-UP DCC,
-cov_pan_chal_hlth_2,Getting the health care I need (including for mental health),"The `cov_pan_chal_hlth_2` data element records response to the prompt, _""Getting the health care I need (including for mental health)""_.
+cov_pan_chal_hlth,Getting the health care I need (including for mental health),"The `cov_pan_chal_hlth` data element records response to the prompt, _""Getting the health care I need (including for mental health)""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",Employment,,single,integer,,,"""0""=[No, not a challenge]|""1""=[Yes, a minor challenge]|""2""=[Yes, this is a major challenge]|""99""=[Prefer not to answer]",,"Adapted for CEAL Program from DMACS COVID 19 Survey.
 
 https://detroitsurvey.umich.edu/COVID 19-survey-and-resources. This question 'covid_pandemic_challenges_healthcare' can also be submitted with the variable name synonym 'cov_pan_chal_hlth'.",RADx-UP DCC,
-covid_pandemic_challenges_abod_2,Having a place to stay/live,"The `covid_pandemic_challenges_abod_2` data element records response to the prompt, _""Having a place to stay/live""_.
+covid_pandemic_challenges_abod,Having a place to stay/live,"The `covid_pandemic_challenges_abod` data element records response to the prompt, _""Having a place to stay/live""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",Employment,,single,integer,,,"""0""=[No, not a challenge]|""1""=[Yes, a minor challenge]|""2""=[Yes, this is a major challenge]|""99""=[Prefer not to answer]",,"Adapted for CEAL Program from DMACS COVID 19 Survey.
 
 https://detroitsurvey.umich.edu/COVID 19-survey-and-resources/.",RADx-UP DCC,
-covid_pandemic_challenges_food_2,Getting enough food to eat,"The `covid_pandemic_challenges_food_2` data element records response to the prompt, _""Getting enough food to eat""_.
+covid_pandemic_challenges_food,Getting enough food to eat,"The `covid_pandemic_challenges_food` data element records response to the prompt, _""Getting enough food to eat""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",Employment,,single,integer,,,"""0""=[No, not a challenge]|""1""=[Yes, a minor challenge]|""2""=[Yes, this is a major challenge]|""99""=[Prefer not to answer]",,"Adapted for CEAL Program from DMACS COVID 19 Survey.
 
 https://detroitsurvey.umich.edu/COVID 19-survey-and-resources/.",RADx-UP DCC,
-covid_pandemic_challenges_wate_2,Having clean water to drink,"The `covid_pandemic_challenges_wate_2` data element records response to the prompt, _""Having clean water to drink""_.
+covid_pandemic_challenges_wate,Having clean water to drink,"The `covid_pandemic_challenges_wate` data element records response to the prompt, _""Having clean water to drink""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",Employment,,single,integer,,,"""0""=[No, not a challenge]|""1""=[Yes, a minor challenge]|""2""=[Yes, this is a major challenge]|""99""=[Prefer not to answer]",,"Adapted for CEAL Program from DMACS COVID 19 Survey.
 
 https://detroitsurvey.umich.edu/COVID 19-survey-and-resources/.",RADx-UP DCC,
-cov_pan_chal_med_2,Getting the medicine I need,"The `cov_pan_chal_med_2` data element records response to the prompt, _""Getting the medicine I need""_.
+cov_pan_chal_med,Getting the medicine I need,"The `cov_pan_chal_med` data element records response to the prompt, _""Getting the medicine I need""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",Employment,,single,integer,,,"""0""=[No, not a challenge]|""1""=[Yes, a minor challenge]|""2""=[Yes, this is a major challenge]|""99""=[Prefer not to answer]",,"Adapted for CEAL Program from DMACS COVID 19 Survey.
 
 https://detroitsurvey.umich.edu/COVID 19-survey-and-resources. This question 'covid_pandemic_challenges_medications' can also be submitted with the variable name synonym 'cov_pan_chal_med'.",RADx-UP DCC,
-cov_pan_chlng_trans_2,"Getting to where I need to go ","The `cov_pan_chlng_trans_2` data element records response to the prompt, _""Getting to where I need to go ""_.
+cov_pan_chlng_trans,"Getting to where I need to go ","The `cov_pan_chlng_trans` data element records response to the prompt, _""Getting to where I need to go ""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
@@ -309,17 +309,17 @@ work_ppe_date_mdy,Date of Work PPE and Distancing Collection (MM/DD/YYYY),"The `
 
 
 This data element only records a non-blank value if the value of `current_employment_status` is `1`, _""Working now""_.",Family Income,,single,string,,,,,Note: Maximum expected day = Current day.,RADx-UP DCC,
-work_wash_2,"In your workplace, do you have access to necessary facilities to wash?","The `work_wash_2` data element records response to the prompt, _""In your workplace, do you have access to necessary facilities to wash?""_.
+work_wash,"In your workplace, do you have access to necessary facilities to wash?","The `work_wash` data element records response to the prompt, _""In your workplace, do you have access to necessary facilities to wash?""_.
 
 Values for this data element are integers that are restricted to the list of 6 permissible integer values.
 
 This data element only records a non-blank value if the value of `current_employment_status` is `1`, _""Working now""_.",Family Income,,single,integer,,,"""1""=[Yes, all of the time]|""2""=[Yes, most of the time]|""3""=[Some of the time]|""4""=[Rarely]|""5""=[Not at all]|""99""=[Prefer not to answer]",,,RADx-UP DCC,
-work_closecont_2,Does your work require you to be in close contact (i.e. within 6 ft) with others?,"The `work_closecont_2` data element records response to the prompt, _""Does your work require you to be in close contact (i.e. within 6 ft) with others?""_.
+work_closecont,Does your work require you to be in close contact (i.e. within 6 ft) with others?,"The `work_closecont` data element records response to the prompt, _""Does your work require you to be in close contact (i.e. within 6 ft) with others?""_.
 
 Values for this data element are integers that are restricted to the list of 6 permissible integer values.
 
 This data element only records a non-blank value if the value of `current_employment_status` is `1`, _""Working now""_.",Family Income,,single,integer,,,"""1""=[Yes, all of the time]|""2""=[Yes, most of the time]|""3""=[Some of the time]|""4""=[Rarely]|""5""=[Not at all]|""99""=[Prefer not to answer]",,https://www.phenxtoolkit.org/toolkit_content/PDF/WT_UK_COVID19.pdf,RADx-UP DCC,
-work_ppe_2,"In your workplace, do you have access to necessary personal protective equipment (PPE)? ","The `work_ppe_2` data element records response to the prompt, _""In your workplace, do you have access to necessary personal protective equipment (PPE)? ""_.
+work_ppe,"In your workplace, do you have access to necessary personal protective equipment (PPE)? ","The `work_ppe` data element records response to the prompt, _""In your workplace, do you have access to necessary personal protective equipment (PPE)? ""_.
 
 Values for this data element are integers that are restricted to the list of 7 permissible integer values.
 
@@ -329,7 +329,7 @@ med_hx_date_mdy,Date of Medical History Collection (MM/DD/YYYY),"The `med_hx_dat
 
 
 ",Medical History,,single,string,,,,,Note: Maximum expected day = Current day.,RADx-UP DCC,
-cc_imm_2,Immunocompromised condition,"The `cc_imm_2` data element records response to the prompt, _""Immunocompromised condition""_.
+cc_imm,Immunocompromised condition,"The `cc_imm` data element records response to the prompt, _""Immunocompromised condition""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -338,12 +338,12 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey-  Update with reference if exists",RADx-UP DCC,
-cc_autoimm_2,Autoimmune disease,"The `cc_autoimm_2` data element records response to the prompt, _""Autoimmune disease""_.
+cc_autoimm,Autoimmune disease,"The `cc_autoimm` data element records response to the prompt, _""Autoimmune disease""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
 ",Medical History,,single,integer,,,"""1""=[Yes]|""0""=[No]|""99""=[Prefer not to answer]",,Recommendation from RADx-UP projects,RADx-UP DCC,
-cc_hypertension_2,"Hypertension (HTN, high blood pressure)","The `cc_hypertension_2` data element records response to the prompt, _""Hypertension (HTN, high blood pressure)""_.
+cc_hypertension,"Hypertension (HTN, high blood pressure)","The `cc_hypertension` data element records response to the prompt, _""Hypertension (HTN, high blood pressure)""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -352,7 +352,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_diabetes_2,Diabetes,"The `cc_diabetes_2` data element records response to the prompt, _""Diabetes""_.
+cc_diabetes,Diabetes,"The `cc_diabetes` data element records response to the prompt, _""Diabetes""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -361,7 +361,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_chronickd_2,Chronic kidney disease (CKD),"The `cc_chronickd_2` data element records response to the prompt, _""Chronic kidney disease (CKD)""_.
+cc_chronickd,Chronic kidney disease (CKD),"The `cc_chronickd` data element records response to the prompt, _""Chronic kidney disease (CKD)""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -370,7 +370,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_cancer_2,Cancer diagnosis and/or treatment within the past 12 months,"The `cc_cancer_2` data element records response to the prompt, _""Cancer diagnosis and/or treatment within the past 12 months""_.
+cc_cancer,Cancer diagnosis and/or treatment within the past 12 months,"The `cc_cancer` data element records response to the prompt, _""Cancer diagnosis and/or treatment within the past 12 months""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -379,7 +379,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_cvd_2,Cardiovascular disease (CVD or heart disease),"The `cc_cvd_2` data element records response to the prompt, _""Cardiovascular disease (CVD or heart disease)""_.
+cc_cvd,Cardiovascular disease (CVD or heart disease),"The `cc_cvd` data element records response to the prompt, _""Cardiovascular disease (CVD or heart disease)""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -388,7 +388,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_asthma_2,"Asthma ","The `cc_asthma_2` data element records response to the prompt, _""Asthma ""_.
+cc_asthma,"Asthma ","The `cc_asthma` data element records response to the prompt, _""Asthma ""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -397,7 +397,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_copd_2,Chronic obstructive pulmonary disease (COPD),"The `cc_copd_2` data element records response to the prompt, _""Chronic obstructive pulmonary disease (COPD)""_.
+cc_copd,Chronic obstructive pulmonary disease (COPD),"The `cc_copd` data element records response to the prompt, _""Chronic obstructive pulmonary disease (COPD)""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -406,7 +406,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_clung_2,Other chronic lung disease,"The `cc_clung_2` data element records response to the prompt, _""Other chronic lung disease""_.
+cc_clung,Other chronic lung disease,"The `cc_clung` data element records response to the prompt, _""Other chronic lung disease""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -415,7 +415,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey -Update with reference if exists",RADx-UP DCC,
-cc_sickle_2,Sickle Cell Anemia,"The `cc_sickle_2` data element records response to the prompt, _""Sickle Cell Anemia""_.
+cc_sickle,Sickle Cell Anemia,"The `cc_sickle` data element records response to the prompt, _""Sickle Cell Anemia""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -424,7 +424,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey -Update with reference if exists",RADx-UP DCC,
-cc_depression_2,Depression,"The `cc_depression_2` data element records response to the prompt, _""Depression""_.
+cc_depression,Depression,"The `cc_depression` data element records response to the prompt, _""Depression""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -433,7 +433,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_asud_2,Alcohol or substance use disorder,"The `cc_asud_2` data element records response to the prompt, _""Alcohol or substance use disorder""_.
+cc_asud,Alcohol or substance use disorder,"The `cc_asud` data element records response to the prompt, _""Alcohol or substance use disorder""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -442,12 +442,12 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_intrav_2,Intravenous drug use,"The `cc_intrav_2` data element records response to the prompt, _""Intravenous drug use""_.
+cc_intrav,Intravenous drug use,"The `cc_intrav` data element records response to the prompt, _""Intravenous drug use""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
 ",Medical History,,single,integer,,,"""1""=[Yes]|""0""=[No]|""99""=[Prefer not to answer]",,Recommendation from RADx-UP projects,RADx-UP DCC,
-cc_othermh_2,Other mental health disorder,"The `cc_othermh_2` data element records response to the prompt, _""Other mental health disorder""_.
+cc_othermh,Other mental health disorder,"The `cc_othermh` data element records response to the prompt, _""Other mental health disorder""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -456,7 +456,7 @@ Values for this data element are integers that are restricted to the list of 3 p
 https://www.phenxtoolkit.org/toolkit_content/PDF/JHU_C4WARD_Health.pdf
 
 C3PNO from JHU Community Survey",RADx-UP DCC,
-cc_otherchroniccond_2,Other chronic condition,"The `cc_otherchroniccond_2` data element records response to the prompt, _""Other chronic condition""_.
+cc_otherchroniccond,Other chronic condition,"The `cc_otherchroniccond` data element records response to the prompt, _""Other chronic condition""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -519,7 +519,7 @@ This data element only records a non-blank value if the value of `self_reported_
 https://www.phenxtoolkit.org/protocols/view/20704?origin=search
 
 2007-2008 National Health and Nutritional Examination Survey (NHANES) Weight History Questionnaire. Only self_reported_height_feet and self_reported_height_inches OR self_reported_height_meters and self_reported_height_centimeters needs to be collected.",RADx-UP DCC,
-self_reported_weight_units_2,Please choose the units you would like to use for weight,"The `self_reported_weight_units_2` data element records response to the prompt, _""Please choose the units you would like to use for weight""_.
+self_reported_weight_units,Please choose the units you would like to use for weight,"The `self_reported_weight_units` data element records response to the prompt, _""Please choose the units you would like to use for weight""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
@@ -536,7 +536,7 @@ If you are currently pregnant, how much did you weigh before your pregnancy?""_.
 
 
 
-This data element only records a non-blank value if the value of `self_reported_weight_units_2` is `1`, _""Kilograms""_.",Weight,,single,string,,,,,"PX021502
+This data element only records a non-blank value if the value of `self_reported_weight_units` is `1`, _""Kilograms""_.",Weight,,single,string,,,,,"PX021502
 
 https://www.phenxtoolkit.org/protocols/view/21502?origin=search
 
@@ -549,7 +549,7 @@ If you are currently pregnant, how much did you weigh before your pregnancy?""_.
 
 
 
-This data element only records a non-blank value if the value of `self_reported_weight_units_2` is `2`, _""Pounds""_.",Weight,,single,string,,,,,"PX021502
+This data element only records a non-blank value if the value of `self_reported_weight_units` is `2`, _""Pounds""_.",Weight,,single,string,,,,,"PX021502
 
 https://www.phenxtoolkit.org/protocols/view/21502?origin=search
 
@@ -569,34 +569,23 @@ self_reported_disability,"Do you have a disability that interferes with your abi
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
 ",Self-reported Health,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Prefer not to answer]",,,RADx-UP DCC,
-disability_deaf_2,"Are you deaf, or do you have serious difficulty hearing?","The `disability_deaf_2` data element records response to the prompt, _""Are you deaf, or do you have serious difficulty hearing?""_.
+disability_deaf,"Are you deaf, or do you have serious difficulty hearing?","The `disability_deaf` data element records response to the prompt, _""Are you deaf, or do you have serious difficulty hearing?""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
 ",Self-reported Health,,single,integer,,,"""1""=[Yes]|""0""=[No]|""99""=[Prefer not to answer]",,"CDC Disability
 
 https://www.cdc.gov/ncbddd/disabilityandhealth/datasets.html",RADx-UP DCC,
-disability_blind_2,"Are you blind, or do you have serious difficulty seeing, even when wearing glasses?","The `disability_blind_2` data element records response to the prompt, _""Are you blind, or do you have serious difficulty seeing, even when wearing glasses?""_.
+disability_blind,"Are you blind, or do you have serious difficulty seeing, even when wearing glasses?","The `disability_blind` data element records response to the prompt, _""Are you blind, or do you have serious difficulty seeing, even when wearing glasses?""_.
 
 Values for this data element are integers that are restricted to the list of 3 permissible integer values.
 
 ",Self-reported Health,,single,integer,,,"""1""=[Yes]|""0""=[No]|""99""=[Prefer not to answer]",,"CDC Disability
 
 https://www.cdc.gov/ncbddd/disabilityandhealth/datasets.html",RADx-UP DCC,
-disability_decisions_2,"Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions? 
+disability_decisions,"Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions?
 
-(5 years of age or older)","The `disability_decisions_2` data element records response to the prompt, _""Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions? 
-
-(5 years of age or older)""_.
-
-Values for this data element are integers that are restricted to the list of 3 permissible integer values.
-
-This data element only records a non-blank value if the value of `self_reported_disability` is `1`, _""Yes""_.",Self-reported Health,,single,integer,,,"""1""=[Yes]|""0""=[No]|""99""=[Prefer not to answer]",,"CDC Disability
-
-https://www.cdc.gov/ncbddd/disabilityandhealth/datasets.html",RADx-UP DCC,
-disability_walking_2,"Do you have serious difficulty walking or climbing stairs? 
-
-(5 years of age or older)","The `disability_walking_2` data element records response to the prompt, _""Do you have serious difficulty walking or climbing stairs? 
+(5 years of age or older)","The `disability_decisions` data element records response to the prompt, _""Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or making decisions?
 
 (5 years of age or older)""_.
 
@@ -605,9 +594,9 @@ Values for this data element are integers that are restricted to the list of 3 p
 This data element only records a non-blank value if the value of `self_reported_disability` is `1`, _""Yes""_.",Self-reported Health,,single,integer,,,"""1""=[Yes]|""0""=[No]|""99""=[Prefer not to answer]",,"CDC Disability
 
 https://www.cdc.gov/ncbddd/disabilityandhealth/datasets.html",RADx-UP DCC,
-disability_dress_2,"Do you have difficulty dressing or bathing?
+disability_walking,"Do you have serious difficulty walking or climbing stairs?
 
-(5 years of age or older)","The `disability_dress_2` data element records response to the prompt, _""Do you have difficulty dressing or bathing?
+(5 years of age or older)","The `disability_walking` data element records response to the prompt, _""Do you have serious difficulty walking or climbing stairs?
 
 (5 years of age or older)""_.
 
@@ -616,9 +605,20 @@ Values for this data element are integers that are restricted to the list of 3 p
 This data element only records a non-blank value if the value of `self_reported_disability` is `1`, _""Yes""_.",Self-reported Health,,single,integer,,,"""1""=[Yes]|""0""=[No]|""99""=[Prefer not to answer]",,"CDC Disability
 
 https://www.cdc.gov/ncbddd/disabilityandhealth/datasets.html",RADx-UP DCC,
-disability_errands_2,"Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor's office or shopping? 
+disability_dress,"Do you have difficulty dressing or bathing?
 
-(15 years of age or older)","The `disability_errands_2` data element records response to the prompt, _""Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor's office or shopping? 
+(5 years of age or older)","The `disability_dress` data element records response to the prompt, _""Do you have difficulty dressing or bathing?
+
+(5 years of age or older)""_.
+
+Values for this data element are integers that are restricted to the list of 3 permissible integer values.
+
+This data element only records a non-blank value if the value of `self_reported_disability` is `1`, _""Yes""_.",Self-reported Health,,single,integer,,,"""1""=[Yes]|""0""=[No]|""99""=[Prefer not to answer]",,"CDC Disability
+
+https://www.cdc.gov/ncbddd/disabilityandhealth/datasets.html",RADx-UP DCC,
+disability_errands,"Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor's office or shopping?
+
+(15 years of age or older)","The `disability_errands` data element records response to the prompt, _""Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor's office or shopping?
 
 (15 years of age or older)""_.
 
@@ -632,27 +632,27 @@ vacc_date_mdy,Date of Vaccine Acceptance Collection (MM/DD/YYYY),"The `vacc_date
 
 
 ",Self-reported Health,,single,string,,,,,Note: Maximum expected day = Current day.,RADx-UP DCC,
-flu_vaccinehistind_2,Have you ever received a flu vaccination?,"The `flu_vaccinehistind_2` data element records response to the prompt, _""Have you ever received a flu vaccination?""_.
+flu_vaccinehistind,Have you ever received a flu vaccination?,"The `flu_vaccinehistind` data element records response to the prompt, _""Have you ever received a flu vaccination?""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",Vaccination,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,C08096,RADx-UP DCC,
-flu_vaccine_season_3,Have you received a flu vaccine in the last 12 months?,"The `flu_vaccine_season_3` data element records response to the prompt, _""Have you received a flu vaccine in the last 12 months?""_.
+flu_vaccine_season,Have you received a flu vaccine in the last 12 months?,"The `flu_vaccine_season` data element records response to the prompt, _""Have you received a flu vaccine in the last 12 months?""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
-This data element only records a non-blank value if the value of `flu_vaccinehistind_2` is `1`, _""Yes""_.",Vaccination,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,UPENN SURVEY,RADx-UP DCC,
+This data element only records a non-blank value if the value of `flu_vaccinehistind` is `1`, _""Yes""_.",Vaccination,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,UPENN SURVEY,RADx-UP DCC,
 covid_vaccine,Have you received a COVID-19 vaccine?,"The `covid_vaccine` data element records response to the prompt, _""Have you received a COVID-19 vaccine?""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",Vaccination,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Prefer not to answer]|""99""=[Don't know]",,,RADx-UP DCC,
-vaccine_reasons_3,Why would/did you get a COVID-19 vaccine? (Check all that apply),"The `vaccine_reasons_3` data element records response to the prompt, _""Why would/did you get a COVID-19 vaccine? (Check all that apply)""_.
+vaccine_reasons,Why would/did you get a COVID-19 vaccine? (Check all that apply),"The `vaccine_reasons` data element records response to the prompt, _""Why would/did you get a COVID-19 vaccine? (Check all that apply)""_.
 
 Values for this data element are integers that restricted to the list of 13 permissible integer values.  The value `96` is mutually exclusive with any other values.
 
 ",Reasons for Getting/Not Getting a COVID 19 Vaccine,,multiple,integer,,,"""1""=[I want(ed) to keep my family safe]|""2""=[I want(ed) to keep my community safe]|""3""=[I want(ed) to keep myself safe]|""4""=[I have(had) a chronic health problem, like asthma or diabetes]|""5""=[My doctor told me to get a COVID-19 vaccine]|""6""=[I don't(didn't) want to get really sick from COVID-19]|""7""=[I want(ed) to feel safe around other people]|""8""=[I believe(d) life won't go back to normal until most people get a COVID-19 vaccine]|""10""=[Required by my school or workplace]|""11""=[Required for travel]|""9""=[Other]|""96""=[Not Applicable]|""99""=[Prefer not to answer]",,From CEAL questions,RADx-UP DCC,
-vaccine_concerns_3,Why would you/did you NOT get a COVID-19 vaccine?  (Check all that apply),"The `vaccine_concerns_3` data element records response to the prompt, _""Why would you/did you NOT get a COVID-19 vaccine?  (Check all that apply)""_.
+vaccine_concerns,Why would you/did you NOT get a COVID-19 vaccine?  (Check all that apply),"The `vaccine_concerns` data element records response to the prompt, _""Why would you/did you NOT get a COVID-19 vaccine?  (Check all that apply)""_.
 
 Values for this data element are integers that restricted to the list of 12 permissible integer values.  The value `96` is mutually exclusive with any other values.
 
@@ -682,22 +682,22 @@ tested_positive_for_covid,Have you ever tested positive for COVID-19?,"The `test
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 This data element only records a non-blank value if the value of `tested_for_covid` is `1`, _""Yes""_.",Tested positive for COVID-19,,single,integer,,,"""1""=[Yes]|""2""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,,RADx-UP DCC,
-positivemonth_covidtest_2,What month did you first test positive for COVID-19?,"The `positivemonth_covidtest_2` data element records response to the prompt, _""What month did you first test positive for COVID-19?""_.
+positivemonth_covidtest,What month did you first test positive for COVID-19?,"The `positivemonth_covidtest` data element records response to the prompt, _""What month did you first test positive for COVID-19?""_.
 
 Values for this data element are integers that are restricted to the list of 13 permissible integer values.
 
 This data element only records a non-blank value if the value of `tested_positive_for_covid` is `1`, _""Yes""_.",Tested positive for COVID-19,,single,integer,,,"""1""=[January]|""2""=[February]|""3""=[March]|""4""=[April]|""5""=[May]|""6""=[June]|""7""=[July]|""8""=[August]|""9""=[September]|""10""=[October]|""11""=[November]|""12""=[December]|""99""=[Prefer not to answer]",,PX570201,RADx-UP DCC,
-positiveyear_covidtest_3,What year did you first test positive for COVID-19?,"The `positiveyear_covidtest_3` data element records response to the prompt, _""What year did you first test positive for COVID-19?""_.
+positiveyear_covidtest,What year did you first test positive for COVID-19?,"The `positiveyear_covidtest` data element records response to the prompt, _""What year did you first test positive for COVID-19?""_.
 
 Values for this data element are integers that are restricted to the list of 5 permissible integer values.
 
 This data element only records a non-blank value if the value of `tested_positive_for_covid` is `1`, _""Yes""_.",Tested positive for COVID-19,,single,integer,,,"""1""=[2019]|""2""=[2020]|""3""=[2021]|""4""=[2022]|""99""=[Prefer not to answer]",,"PX570201.  For sequentially added years, we will accept all versions of this variable going forward, including 1.0.",RADx-UP DCC,
-recentmonth_covidtest_2,What month did you have your most recent COVID-19 test?,"The `recentmonth_covidtest_2` data element records response to the prompt, _""What month did you have your most recent COVID-19 test?""_.
+recentmonth_covidtest,What month did you have your most recent COVID-19 test?,"The `recentmonth_covidtest` data element records response to the prompt, _""What month did you have your most recent COVID-19 test?""_.
 
 Values for this data element are integers that are restricted to the list of 13 permissible integer values.
 
 This data element only records a non-blank value if the value of `tested_for_covid` is `1`, _""Yes""_.",Tested positive for COVID-19,,single,integer,,,"""1""=[January]|""2""=[February]|""3""=[March]|""4""=[April]|""5""=[May]|""6""=[June]|""7""=[July]|""8""=[August]|""9""=[September]|""10""=[October]|""11""=[November]|""12""=[December]|""99""=[Prefer not to answer]",,PX570201,RADx-UP DCC,
-recentyear_covidtest_3,What year did you have your most recent COVID-19 test?,"The `recentyear_covidtest_3` data element records response to the prompt, _""What year did you have your most recent COVID-19 test?""_.
+recentyear_covidtest,What year did you have your most recent COVID-19 test?,"The `recentyear_covidtest` data element records response to the prompt, _""What year did you have your most recent COVID-19 test?""_.
 
 Values for this data element are integers that are restricted to the list of 5 permissible integer values.
 
@@ -707,17 +707,17 @@ recentresult_covidtest,What was the result of your most recent COVID-19 test?,"T
 Values for this data element are integers that are restricted to the list of 6 permissible integer values.
 
 This data element only records a non-blank value if the value of `tested_for_covid` is `1`, _""Yes""_.",Tested positive for COVID-19,,single,integer,,,"""1""=[Negative]|""2""=[Positive]|""3""=[Never obtained results]|""4""=[Indeterminate]|""98""=[Don't know]|""99""=[Prefer not to answer]",,PX570201,RADx-UP DCC,
-cov_tst_mthd_2,"How were you tested for your most recent test? ","The `cov_tst_mthd_2` data element records response to the prompt, _""How were you tested for your most recent test? ""_.
+cov_tst_mthd,"How were you tested for your most recent test? ","The `cov_tst_mthd` data element records response to the prompt, _""How were you tested for your most recent test? ""_.
 
 Values for this data element are integers that are restricted to the list of 5 permissible integer values.
 
 This data element only records a non-blank value if the value of `tested_for_covid` is `1`, _""Yes""_.",Tested positive for COVID-19,,single,integer,,,"""1""=[Nasal Swab]|""2""=[Throat Swab]|""3""=[Blood Sample]|""4""=[Saliva]|""99""=[Prefer not to answer]",,,RADx-UP DCC,
-test_accesswhere_2,I know where I can get COVID-19 testing in my community.,"The `test_accesswhere_2` data element records response to the prompt, _""I know where I can get COVID-19 testing in my community.""_.
+test_accesswhere,I know where I can get COVID-19 testing in my community.,"The `test_accesswhere` data element records response to the prompt, _""I know where I can get COVID-19 testing in my community.""_.
 
 Values for this data element are integers that are restricted to the list of 6 permissible integer values.
 
 ",Accessibility to testing,,single,integer,,,"""0""=[Strongly disagree]|""1""=[Disagree]|""2""=[Neither disagree or agree]|""3""=[Agree]|""4""=[Strongly agree]|""99""=[Prefer not to answer]",,RADX UP,RADx-UP DCC,
-test_accesseasy_2,It is easy to get tested for COVID-19.,"The `test_accesseasy_2` data element records response to the prompt, _""It is easy to get tested for COVID-19.""_.
+test_accesseasy,It is easy to get tested for COVID-19.,"The `test_accesseasy` data element records response to the prompt, _""It is easy to get tested for COVID-19.""_.
 
 Values for this data element are integers that are restricted to the list of 6 permissible integer values.
 
@@ -727,7 +727,7 @@ covid_test_date_mdy,Date of COVID Test Information Collection (MM/DD/YYYY),"The 
 
 
 ",Accessibility to testing,,single,string,,,,,Note: Maximum expected day = Current day.,RADx-UP DCC,
-covid_test_tar_dis_stat_2,Participant Testing Disease Status,"The `covid_test_tar_dis_stat_2` data element records response to the prompt, _""Participant Testing Disease Status""_.
+covid_test_tar_dis_stat,Participant Testing Disease Status,"The `covid_test_tar_dis_stat` data element records response to the prompt, _""Participant Testing Disease Status""_.
 
 Values for this data element are integers that are restricted to the list of 7 permissible integer values.
 
@@ -843,28 +843,28 @@ sym_date_mdy,Date of Symptom Collection (MM/DD/YYYY),"The `sym_date_mdy` data el
 
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,string,,,,,Note: Maximum expected day = Current day.,RADx-UP DCC,
-covid_fever_2,Fever or chills,"The `covid_fever_2` data element records response to the prompt, _""Fever or chills""_.
+covid_fever,Fever or chills,"The `covid_fever` data element records response to the prompt, _""Fever or chills""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,"https://www.cdc.gov/screening/index.html
 
 CDC COVID-19 Screening",RADx-UP DCC,
-covid_cough_2,Cough,"The `covid_cough_2` data element records response to the prompt, _""Cough""_.
+covid_cough,Cough,"The `covid_cough` data element records response to the prompt, _""Cough""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,"https://www.cdc.gov/screening/index.html
 
 CDC COVID-19 Screening",RADx-UP DCC,
-covid_diffbreath_2,Shortness of breath or difficulty breathing,"The `covid_diffbreath_2` data element records response to the prompt, _""Shortness of breath or difficulty breathing""_.
+covid_diffbreath,Shortness of breath or difficulty breathing,"The `covid_diffbreath` data element records response to the prompt, _""Shortness of breath or difficulty breathing""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,"https://www.cdc.gov/screening/index.html
 
 CDC COVID-19 Screening",RADx-UP DCC,
-covid_fatigue_2,Lack of energy or general tired feeling,"The `covid_fatigue_2` data element records response to the prompt, _""Lack of energy or general tired feeling""_.
+covid_fatigue,Lack of energy or general tired feeling,"The `covid_fatigue` data element records response to the prompt, _""Lack of energy or general tired feeling""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
@@ -872,36 +872,36 @@ Values for this data element are integers that are restricted to the list of 4 p
 
 CDC COVID-19 Screening
 
-modified to 1 week based on feedback from RADx-UP projects.  This CDE can also be submitted under its previous name covid_fatique_2  (with a q)",RADx-UP DCC,
-covid_myalgia_2,Muscle or body aches,"The `covid_myalgia_2` data element records response to the prompt, _""Muscle or body aches""_.
+modified to 1 week based on feedback from RADx-UP projects.  This CDE can also be submitted under its previous name covid_fatique  (with a q)",RADx-UP DCC,
+covid_myalgia,Muscle or body aches,"The `covid_myalgia` data element records response to the prompt, _""Muscle or body aches""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,"https://www.cdc.gov/screening/index.html
 
 CDC COVID-19 Screening",RADx-UP DCC,
-covid_headache_2,Headache,"The `covid_headache_2` data element records response to the prompt, _""Headache""_.
+covid_headache,Headache,"The `covid_headache` data element records response to the prompt, _""Headache""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,"https://www.cdc.gov/screening/index.html
 
 CDC COVID-19 Screening",RADx-UP DCC,
-covid_olfactory_2,New loss of taste or smell,"The `covid_olfactory_2` data element records response to the prompt, _""New loss of taste or smell""_.
+covid_olfactory,New loss of taste or smell,"The `covid_olfactory` data element records response to the prompt, _""New loss of taste or smell""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,"https://www.cdc.gov/screening/index.html
 
 CDC COVID-19 Screening",RADx-UP DCC,
-covid_runnynose_2,"Sore throat, congestion or runny nose ","The `covid_runnynose_2` data element records response to the prompt, _""Sore throat, congestion or runny nose ""_.
+covid_runnynose,"Sore throat, congestion or runny nose ","The `covid_runnynose` data element records response to the prompt, _""Sore throat, congestion or runny nose ""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,"https://www.cdc.gov/screening/index.html
 
 CDC COVID-19 Screening",RADx-UP DCC,
-covid_nausea_2,"Feeling sick to your stomach or vomiting, diarrhea","The `covid_nausea_2` data element records response to the prompt, _""Feeling sick to your stomach or vomiting, diarrhea""_.
+covid_nausea,"Feeling sick to your stomach or vomiting, diarrhea","The `covid_nausea` data element records response to the prompt, _""Feeling sick to your stomach or vomiting, diarrhea""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
@@ -910,17 +910,17 @@ Values for this data element are integers that are restricted to the list of 4 p
 CDC COVID-19 Screening
 
 modified to 1 week based on feedback from RADx-UP projects",RADx-UP DCC,
-covid_abpain_2,Abdominal Pain,"The `covid_abpain_2` data element records response to the prompt, _""Abdominal Pain""_.
+covid_abpain,Abdominal Pain,"The `covid_abpain` data element records response to the prompt, _""Abdominal Pain""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,From NIH communications,RADx-UP DCC,
-covid_skinrash_2,Skin Rash,"The `covid_skinrash_2` data element records response to the prompt, _""Skin Rash""_.
+covid_skinrash,Skin Rash,"The `covid_skinrash` data element records response to the prompt, _""Skin Rash""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
 ",This is for projects that are doing acute testing. To collect as part of the testing procedure by the study team.,,single,integer,,,"""1""=[Yes]|""0""=[No]|""98""=[Don't know]|""99""=[Prefer not to answer]",,From NIH communications,RADx-UP DCC,
-covid_other_2,Other,"The `covid_other_2` data element records response to the prompt, _""Other""_.
+covid_other,Other,"The `covid_other` data element records response to the prompt, _""Other""_.
 
 Values for this data element are integers that are restricted to the list of 4 permissible integer values.
 
@@ -948,7 +948,7 @@ Values for this data element are integers that are restricted to the list of 6 p
 This data element only records a non-blank value if the value of `lifetime_use_alcohol` is `1`, _""Yes""_.",Alcohol and Tobacco/Nicotine Use,,single,integer,,,"""0""=[Never]|""1""=[Monthly or less]|""2""=[2-4 times a month]|""3""=[2-3 times a week]|""4""=[4 or more times a week]|""5""=[Don't know or refuse to answer]",,"https://www.drugabuse.gov/sites/default/files/audit.pdf
 
 Alcohol Use Disorders Identification Test (AUDIT)",RADx-UP DCC,
-smoker_cur_stat_2,Do you now smoke cigarettes?,"The `smoker_cur_stat_2` data element records response to the prompt, _""Do you now smoke cigarettes?""_.
+smoker_cur_stat,Do you now smoke cigarettes?,"The `smoker_cur_stat` data element records response to the prompt, _""Do you now smoke cigarettes?""_.
 
 Values for this data element are integers that are restricted to the list of 6 permissible integer values.
 
@@ -961,7 +961,7 @@ smoker_number,"If you smoke every day, on average, how many cigarettes per day d
 
 
 
-This data element only records a non-blank value if the value of `smoker_cur_stat_2` is `4`, _""Every Day""_.",Alcohol and Tobacco/Nicotine Use,,single,string,,,,,"PX30604
+This data element only records a non-blank value if the value of `smoker_cur_stat` is `4`, _""Every Day""_.",Alcohol and Tobacco/Nicotine Use,,single,string,,,,,"PX30604
 
 https://www.phenxtoolkit.org/protocols/view/30604
 
@@ -970,7 +970,7 @@ vaper_cur_stat,"Do you now use electronic cigarettes every day, some days, rarel
 
 Values for this data element are integers that are restricted to the list of 6 permissible integer values.
 
-",Alcohol and Tobacco/Nicotine Use,,single,integer,,,"""4""=[Every Day]|""3""=[Some Days]|""2""=[Rarely]|""1""=[Not at all]|""98""=[Prefer not to answer]|""99""=[Don't know]",,https://www.cdc.gov/tobacco/data_statistics/sgr/e-cigarettes/pdfs/2016_SGR_App_2-2_508.pdf),RADx-UP DCC,
+",Alcohol and Tobacco/Nicotine Use,,single,integer,,,"""4""=[Every Day]|""3""=[Some Days]|""2""=[Rarely]|""1""=[Not at all]|""98""=[Prefer not to answer]|""99""=[Don't know]",,https://www.cdc.gov/tobacco/data_statistics/sgr/e-cigarettes/pdfs/2016_SGR_App-208.pdf),RADx-UP DCC,
 iden_date_mdy,Date of Identity Collection (MM/DD/YYYY),"The `iden_date_mdy` data element records response to the prompt, _""Date of Identity Collection (MM/DD/YYYY)""_.
 
 
@@ -1031,7 +1031,7 @@ other_email,Other Email,"The `other_email` data element records response to the 
 
 
 ",About you,,single,string,,,,,,RADx-UP DCC,
-preferred_contact_method_2,Preferred Method of Contact,"The `preferred_contact_method_2` data element records response to the prompt, _""Preferred Method of Contact""_.
+preferred_contact_method,Preferred Method of Contact,"The `preferred_contact_method` data element records response to the prompt, _""Preferred Method of Contact""_.
 
 Values for this data element are integers that are restricted to the list of 6 permissible integer values.
 
